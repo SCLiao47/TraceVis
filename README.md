@@ -42,6 +42,11 @@ Required inputs:
    3. TCX data process: [pyworkout-toolkit](https://github.com/triskadecaepyon/pyworkout-toolkit) can parse .TCX files to Pandas DataFrame.
 2. Update Development Plan
 
+### 2023/11/04
+1. Start implementing the pipeline in the script `StaticVisualization.ipynb`
+2. Realize **pyworkout-toolkit** does not parse each data point. Switch to [python-tcxparser](https://github.com/vkurup/python-tcxparser) for reading the .tcx files. 
+3. Progress: read one .tcx file and plot the trace on Mapbox map. 
+
 ## Backlog and wishlists
 1. Automated map image generation according to running files
 
