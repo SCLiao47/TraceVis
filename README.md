@@ -22,9 +22,10 @@ Required inputs:
 - [x] Gather running data from the NRC app. 
 - [x] Generate map style on [mapbox](https://www.mapbox.com/)
 - [ ] Basic visualization pipeline
-  - [ ] Test visualization process of plotly with mapbox
-  - [ ] Decide how to handle data (preprocess and save or do it online)
-  - [ ] Setup scripts for static visualization 
+  - [x] Test visualization process of plotly with mapbox
+  - [ ] Decide how to handle data (preprocess and save to one big dataframe)
+  - [x] Setup scripts for static visualization 
+  - [ ] format mapbox to have a better view
   - [ ] Generate static image for the whole training trace
 - [ ] animation
   - [ ] Test animation process of plotly
@@ -47,7 +48,13 @@ Required inputs:
 2. Realize **pyworkout-toolkit** does not parse each data point. Switch to [python-tcxparser](https://github.com/vkurup/python-tcxparser) for reading the .tcx files. 
 3. Progress: read one .tcx file and plot the trace on Mapbox map. 
 
-## Backlog and wishlists
+### 2023/11/11
+1. Read all files in the Data folder and store it into big numpy arrays
+2. Plot trace on Mapbox and color each trace by the index of data
+3. The color is handled by a `dict` structure for discrete color map as `px.line_mapbox` does not support continuous colormap.
+
+
+## Backlog and wishlist
 1. Automated map image generation according to running files
 
 
