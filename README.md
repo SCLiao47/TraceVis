@@ -21,12 +21,12 @@ Required inputs:
 ## Plan
 - [x] Gather running data from the NRC app. 
 - [x] Generate map style on [mapbox](https://www.mapbox.com/)
-- [ ] Basic visualization pipeline
+- [x] Basic visualization pipeline
   - [x] Test visualization process of plotly with mapbox
-  - [ ] Decide how to handle data (preprocess and save to one big dataframe)
+  - [x] Decide how to handle data (preprocess and save to one big dataframe)
   - [x] Setup scripts for static visualization 
-  - [ ] format mapbox to have a better view
-  - [ ] Generate static image for the whole training trace
+  - [x] format mapbox to have a better view
+  - [x] Generate static image for the whole training trace
 - [ ] animation
   - [ ] Test animation process of plotly
   - [ ] preprocess data to have animation_frame and animation_group for animation in plotly 
