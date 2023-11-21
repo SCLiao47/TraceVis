@@ -2,6 +2,7 @@
 Trace Visualization for running logs
 
 This project tries to visually document the training process of my first marathon (Ann Arbor Marathon on October 1st, 2023). I used Nike Running Club (NRC) to record the training for this marathon. 
+![Snapshot of 20231111](/Image/Static_20231121.png)
 
 # General Process
 1. Gather running data in .gpx files
@@ -29,7 +30,10 @@ Required inputs:
   - [x] Generate static image for the whole training trace
 - [ ] animation
   - [ ] Test animation process of plotly
-  - [ ] preprocess data to have animation_frame and animation_group for animation in plotly 
+  - [ ] preprocess data to have animation_frame and animation_group for animation in plotly
+- [ ] Packaging
+  - [ ] Clean up code
+  - [ ] Document write up
 
 ## Log
 ### 2023/10/7
@@ -49,10 +53,14 @@ Required inputs:
 3. Progress: read one .tcx file and plot the trace on Mapbox map. 
 
 ### 2023/11/11
-1. Read all files in the Data folder and store it into big numpy arrays
-2. Plot trace on Mapbox and color each trace by the index of data
-3. The color is handled by a `dict` structure for discrete color map as `px.line_mapbox` does not support continuous colormap.
-![Snapshot of 20231111](/Image/Static_20231121.png)
+1. Read all files in the Data folder and store them into big numpy arrays
+2. Plot traces on Mapbox and color each trace by the index of data
+3. The color is handled by a `dict` structure for discrete colormap as `px.line_mapbox` does not support continuous colormap.
+
+### 2023/11/21
+1. Formatting Mapbox plot for better visualization, include {height, width, zoom}
+2. Try out different coloring styles. Settle on 'dark' map with reversed 'sunset' colormap
+3. Put numpy data in to Pandas dataframe
 
 ## Backlog and wishlist
 1. Automated map image generation according to running files
