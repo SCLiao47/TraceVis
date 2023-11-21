@@ -1,5 +1,4 @@
-# TraceVis
-Trace Visualization for running logs
+# TraceVis: Trace Visualization for running logs
 
 This project tries to visually document the training process of my first marathon (Ann Arbor Marathon on October 1st, 2023). I used Nike Running Club (NRC) to record the training for this marathon. 
 ![Snapshot of 20231111](/Image/Static_20231121.png)
