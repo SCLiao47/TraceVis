@@ -52,7 +52,7 @@ Required inputs:
 1. Read all files in the Data folder and store it into big numpy arrays
 2. Plot trace on Mapbox and color each trace by the index of data
 3. The color is handled by a `dict` structure for discrete color map as `px.line_mapbox` does not support continuous colormap.
-![Snapshot of 20231111](/Image/20231111.png)
+![Snapshot of 20231111](/Image/Static_20231121.png)
 
 ## Backlog and wishlist
 1. Automated map image generation according to running files
