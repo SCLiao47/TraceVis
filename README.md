@@ -62,7 +62,7 @@ Required inputs:
 2. Try out different coloring styles. Settle on 'dark' map with reversed 'sunset' colormap
 3. Put numpy data in to Pandas dataframe
 
-### 2023/12/01
+### 2023/12/01 - 12/04
 1. Found that plotly is not suitable for directly animating such large amount of frames. Switch to separated approach: save each frame as .png and make .gif afterward.
 2. To output plotly as image file, need `kaleido` package. However, [it somehow needs to be downgraded](https://stackoverflow.com/a/72614865/13624201).
 3. Turns out, plotly output image with `orca` is more efficient in this case. 
