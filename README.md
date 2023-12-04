@@ -27,9 +27,10 @@ Required inputs:
   - [x] Setup scripts for static visualization 
   - [x] format mapbox to have a better view
   - [x] Generate static image for the whole training trace
-- [ ] animation
-  - [ ] Test animation process of plotly
-  - [ ] preprocess data to have animation_frame and animation_group for animation in plotly
+- [x] animation
+  - [x] Test animation process of plotly. It turned out unsuitable in this use case as there are too many frames. 
+  - [x] Generating each frame of the animation by plotly and save them as .png.
+  - [x] Create .gif from .png images of animation frames. 
 - [ ] Packaging
   - [ ] Clean up code
   - [ ] Document write up
@@ -60,6 +61,12 @@ Required inputs:
 1. Formatting Mapbox plot for better visualization, include {height, width, zoom}
 2. Try out different coloring styles. Settle on 'dark' map with reversed 'sunset' colormap
 3. Put numpy data in to Pandas dataframe
+
+### 2023/12/01
+1. Found that plotly is not suitable for directly animating such large amount of frames. Switch to separated approach: save each frame as .png and make .gif afterward.
+2. To output plotly as image file, need `kaleido` package. However, [it somehow needs to be downgraded](https://stackoverflow.com/a/72614865/13624201).
+3. Turns out, plotly output image with `orca` is more efficient in this case. 
+4. Implemented pngs to gif via `PIM` and get the [**animation.gif**](/Image/animation.gif)
 
 ## Backlog and wishlist
 1. Automated map image generation according to running files
