@@ -35,6 +35,8 @@ Required inputs:
   - [x] Create .gif from .png images of animation frames. 
 - [ ] Packaging
   - [ ] Clean up code
+      - [x] utility functions
+      - [ ] configuration file
   - [ ] Document write up
 
 ## Log
@@ -70,8 +72,12 @@ Required inputs:
 3. Turns out, plotly output image with `orca` is more efficient in this case. 
 4. Implemented pngs to gif via `PIM` and get the [**animation.gif**](/Image/animation.gif)
 
+### 2023/12/10
+1. Start cleaning up by creating utilities.py to streamline the process.
+
+
 ## Backlog and wishlist
-1. Automated map image generation according to running files
+1. Automated generate `center` and `zoom` for mapbox based on traces. 
 
 
 # Related Project
