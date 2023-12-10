@@ -4,18 +4,20 @@ This project tries to visually document the training process of my first maratho
 ![Snapshot of 20231111](/Image/Static_20231121.png)
 
 # General Process
-1. Gather running data in .gpx files
-2. Generate a map image
-3. Align coordinates between .gpx files and map image
-4. Compute waypoint in map coordinates and estimate speed for each trace
-5. Overlap traces on the map
+1. Gather running data in **.gpx** files
+    1. Prepare two testing traces and name them `Data/Test/Test.tcx` and `Data/Test/Test2.tcx`.
+    2. All other traces should be in the `Data` folder as `Data/*.tcx`.
+2. Register Mapbox for certain map styles
+    1. store the Mapbox token in a file named `.mapbox_token`.
+3. `StaticVisualization.ipynb` is used to generate a static image with all traces.
+4. `AnimatedVisualization.ipynb` is used to generate a .gif image for all traces. 
 
 # Developement Plan and Log
 Expected outcome:
 Animations of trajectories on a given map in the order of date. Each trajectory is colored by estimated speed.
 
 Required inputs:
-1. Running files in .gpx
+1. Running files in `Data/*.gpx`
 2. Map image and corresponding coordinate
 
 ## Plan
