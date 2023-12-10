@@ -2,3 +2,4 @@ Data/*
 .mapbox_token
 TCXconversion.log
 Image/Pngs*
+__pycache__/*
