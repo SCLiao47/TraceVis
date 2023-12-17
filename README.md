@@ -36,7 +36,7 @@ Required inputs:
 - [ ] Packaging
   - [ ] Clean up code
       - [x] utility functions
-      - [ ] configuration file
+      - [x] configuration file
   - [ ] Document write up
 
 ## Log
