@@ -1,0 +1,36 @@
+# configuration files 
+
+
+input_dir: 'Data'       # input .gpx data directory
+output_dir: 'Image'
+
+# put your mapbox access token here, can be obtained from https://account.mapbox.com/
+mapbox_access_token: 
+
+# put your mapbox config here
+mapbox_config:
+  center:
+    lat: 42.275
+    lon: -83.723
+  zoom: 12
+  style: 'dark'           # https://docs.mapbox.com/api/maps/styles/
+  color_style:
+    map: 'sunset'         # valid color: https://plotly.com/python/builtin-colorscales/
+    order:  'reverse'     # None for normal order
+
+# plot layout config
+fig_layout:
+  height: 1000
+  width: 1000
+  margin:
+    r: 0
+    t: 0
+    l: 0
+    b: 0
+
+animation:
+  SPF_plotly: 3600      # second of data to generate a frame
+  SPF_gif: 60           # second of data to generate a frame
+  FPS_gif: 60           # frame per second in the output gif
+  plotly_engin: 'orca'  # 'kaleido' or 'orca'
+  png_dir: 'pngs'
